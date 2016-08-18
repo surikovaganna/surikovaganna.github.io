@@ -1,0 +1,567 @@
+@font-face{
+    font-family: MyriadPro;
+    src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 1280px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+.wrapper{
+    width: 1280px;
+    margin:0 auto;
+    padding: 0 64px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ----- header begin ----- */
+header{
+    height: 790px;
+    width: 100%;
+    background: url(../images/header.jpg) no-repeat;
+    background-size: cover;
+    display: block;
+    position: relative;
+}
+
+.headerMenu{
+    height: 100px;
+    position: relative;
+}
+
+.logo{
+    width: 53px;
+    height: 40px;
+    position: absolute;
+    top:40px;
+    left: 0;
+}
+
+.headerMenu > ul{
+    list-style: none;
+    position: absolute;
+    top:50px;
+    right: 0;
+}
+.headerMenu > ul > li{
+    float: left;
+    margin-left: 54px;
+
+}
+
+li > a{
+    color:#ffffff;
+    font-weight: bold;
+}
+
+.nav-cart {
+    width:24px;
+    height: 20px;
+}
+
+h1{
+    font-size: 60px ;
+    text-align: center;
+    margin-top: 220px;
+    display: block;
+}
+
+.header-text{
+    width: 590px;
+    font-size: 20px ;
+    text-align: center;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+.nav-header{
+    background: url("../images/nav-header.png") no-repeat;
+    cursor: pointer;
+    width: 34px;
+    height: 22px;
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+/* ----- header end ----- */
+
+/* ----- navigation begin ----- */
+nav{
+    height: 145px;
+    background: #f5f6f7;
+}
+
+.navigation{
+    position: relative;
+    height: 145px;
+    width: 1152px;
+}
+
+.checkbox{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin: 0 30px 0 0;
+    position: absolute;
+    left: 33px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.checkbox label:hover, button:hover {
+    cursor: pointer;
+}
+
+.checkbox > input:not(checked){/* Прячем оригинальный чекбокс. */
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox > input:not(checked) + label {
+    position: relative; /* позиционирование псевдочекбокса относительно label */
+    padding: 0 0 0 45px; /* оставляем слева от label место под псевдочекбокс */
+    margin-right:40px;
+}
+
+.checkbox > input:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #cccccc;
+    border-radius: 3px;
+    background: #ffffff;
+}
+
+.checkbox > input:checked + label:before{
+    border: 2px solid #aa9b77;
+    background:#ffffff url(../images/checkbox.png) no-repeat;
+    background-position:center;
+}
+
+.button{
+    color:#ffffff;
+    background: #aa9b77;
+    font-weight: bold;
+    width: 204px;
+    height: 52px;
+    border:0;
+    border-radius:3px;
+    text-transform: uppercase;
+    line-height: 52px;
+    text-align: center;
+    position: absolute;
+    right: 30px;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+}
+/* ----- navigation end ----- */
+
+/* ----- content begin ----- */
+.products{
+    margin-bottom: 130px;
+    position: relative;
+}
+
+.lineThrougth, .lineThrougthWomen{
+    margin-top: 90px;
+    height: 20px;
+    display: block;
+    position: relative;
+    padding-right: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.lineThrougth span:first-child, .lineThrougthWomen span:last-child{
+     color: #424242;
+     text-transform: uppercase;
+     font-size: 20px;
+     font-weight: bold;
+     background: #fff;
+     padding: 0 35px;
+ }
+
+.lineThrougthWomen span:last-child{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lineThrougth span:last-child, .lineThrougthWomen span:first-child{
+    width: 30px;
+    height: inherit;
+    background: #ffffff;
+    position: absolute;
+    padding: 10px 15px;
+    z-index: 1;
+}
+
+.lineThrougth span:last-child{
+    right: 0;
+}
+.lineThrougthWomen span:first-child {
+    left: 0;
+}
+
+.lineThrougth:after, .lineThrougthWomen:before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #cccccc;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rowProduct > ul{
+    overflow: hidden;
+}
+.navProduct {
+    height: 90px;
+    color: #aa9b77;
+    font-weight: bold;
+    position: relative;
+}
+
+.navRight{
+    position: absolute;
+    right:35px;
+    bottom: 20px;
+}
+
+.navProductL, .navProductR{
+    height: 12px;
+    width: 10px;
+    display: inline-block;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.navProductL{
+    background: url("../images/navProductL.png");
+}
+
+.navProductR{
+    background: url("../images/navProductR.png");
+}
+
+.navLeft{
+    position: absolute;
+    left:35px;
+    bottom: 20px;
+}
+
+.cell{
+    height: 375px;
+    width: 320px;
+    background: #f5f6f7;
+    float: left;
+    margin: 0 32px;
+    padding: 0 25px;
+    position: relative;
+}
+
+.cell:hover:after{
+    content: '';
+    height: 375px;
+    width: 320px;
+    background: transparent;
+    border: 6px solid #aa9b77;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.topProduct{
+    height: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.size{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+}
+
+.size a{
+    color:#424242;
+    text-transform: uppercase;
+}
+.size-top:after{
+    content: '';
+    height: 8px;
+    width: 12px;
+    display: inline-block;
+    background: url("../images/size-arrow.png");
+}
+
+.size-top{
+    position: relative;
+}
+
+.size-top .size-inside{
+    display: none;
+}
+
+.size-top:hover .size-inside{
+    display: block;
+    position: absolute;
+    top:100%;
+    left: 0;
+}
+
+.size-inside{
+    border: 1px solid #aa9b77;
+}
+
+.size-inside li{
+    text-align: center;
+    display: block;
+    background: #fff;
+    border-bottom: 1px solid #aa9b77;
+}
+
+.size-inside li:last-child{
+    border-bottom: 0px solid #aa9b77;
+}
+
+.size-inside a {
+    padding: 5px 10px;
+}
+
+
+.topProduct > ul:last-child{
+    position: absolute;
+    right: 0;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.round{
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.color > li{
+    cursor: pointer;
+}
+
+.blue{
+    background: #165eb9;
+}
+
+.yellow{
+    background: #ffe637;
+}
+
+.grey{
+    background: #535253;
+}
+
+.pink{
+    background: #d3a7ac;
+    right: 20px;
+}
+
+.white{
+    background: #ffffff;
+}
+
+.fotoProduct{
+    height: 255px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.bottomProduct{
+    height: 60px;
+    text-transform: uppercase;
+    font-weight:bold;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.nameProduct{
+    cursor: pointer;
+    z-index: 1;
+    font-size: 18px;
+    max-width: 60%;
+    max-height: 60px;
+    overflow: hidden;
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+}
+
+.nameProduct a{
+    color: #aa9b77;
+}
+
+.priceProduct {
+    color: #424242;
+    font-size: 22px;
+    max-width: 35%;
+    max-height: 60px;
+    overflow: hidden;
+    position: absolute;
+    top:50%;
+    right:0;
+    transform: translateY(-50%);
+}
+
+
+.content{
+    height: 400px;
+    background: #aa9b77;
+    text-align: center;
+    display: block;
+}
+.aboutUs{
+    color:#837659;
+    background: #aa9b77;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    position: absolute;
+    top:-23px;
+    left:50%;
+    transform: translate(-50%);
+}
+.aboutUsText{
+    color:#424242;
+    font-weight: bold;
+    line-height: 24px;
+    border: 1px solid #918363;
+    padding: 80px 120px;
+    width: 60%;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, 25%);
+}
+
+/* ----- content end ----- */
+
+/* ----- footer begin ----- */
+
+.twitter{
+    height: 71px;
+    background: #535253;
+}
+.twitt{
+    height: 71px;
+    position: relative;
+    font: 16px MyriadPro;
+}
+
+.logoTwitt{
+    background: url("../images/twitter.png") left no-repeat;
+    height: 24px;
+    width: 29px;
+    margin-right:20px ;
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.twitt > span:last-child{
+    position: absolute;
+    top:50%;
+    left:50px;
+    transform: translateY(-50%);
+}
+
+footer{
+    background: #424242;
+    display: block;
+    }
+
+.footer{
+    height: 352px;
+    position: relative;
+}
+
+.footerText, .footer-menu{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footerText{
+    width: 315px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 20px;
+    left: 0;
+}
+
+.footerText > h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-menu{
+    right: 0;
+}
+
+.footer-menu > ul{
+    display: table-row;
+}
+
+.footer-menu ul li{
+    display: table-cell;
+    border-left: 2px solid #aa9b77;
+    padding:0 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.footer-menu ul li:first-child{
+    border-left: none;
+}
+
+.footer-menu > p{
+    font: 18px MyriadPro;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+
+/* ----- footer end ----- */

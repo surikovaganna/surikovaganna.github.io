@@ -1,0 +1,228 @@
+@font-face{
+    font-family: Scriptina;
+    src: url(../fonts/SCRIPTIN.ttf);
+}
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/Proxima Nova Regular.otf");
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 1260px;
+    font:14px ProximaNova, sans-serif;
+    color:#56534c;
+    letter-spacing:0.1em;
+}
+.wrapper{
+    width:1260px;
+    margin:0 auto;
+}
+
+header{
+    background-color:rgba(86, 83, 76, 0.5);
+    letter-spacing:0.3em;
+    height: 70px;
+    padding-top: 30px;
+}
+
+header a{
+    color: #ffffff;
+}
+
+.logo{
+    font:30px Scriptina;
+    margin-right:60px;
+    line-height: 0;
+}
+
+header nav{
+    display: inline-block;
+    font: 14px 'Alegreya', serif;
+    text-transform: uppercase;
+}
+header nav a{
+    margin: auto 40px;
+    border: 2px solid transparent;
+}
+
+header nav a:hover, .social a:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.social{
+    float:right;
+}
+
+.social a{
+    margin-left: 30px;
+}
+
+/*header end*/
+
+.firstBlock{
+    height: 900px;
+    background: url("../images/bg-1.jpg") no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 92px;
+    margin-top: 210px;
+    text-align: center;
+    letter-spacing:0.075em;
+    text-shadow: 0 1px 0 rgba(61, 48, 41, 1);
+}
+.dashed-line{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.firstBlock p{
+    margin-top: 55px;
+    font: 24px ProximaNova;
+    text-align: center;
+    letter-spacing:0.1em;
+}
+.ourMenu{
+    margin: 60px auto;
+    width: 200px;
+    height: 50px;
+    background-color:rgba(86, 83, 76, 0.5);
+    border: 1px dashed #9e9c93;
+    font: bold 14px 'Alegreya', serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing:0.3em;
+    text-align: center;
+}
+
+main{
+    background-color: #fff;
+}
+
+.block {
+    height: 760px;
+}
+
+.border-bullets {
+    width: 111px;
+    height: 111px;
+    margin: 0 auto;
+    transform:translateY(100%);
+}
+.secondBlock{
+    background: url("../images/bg-2.png") repeat;
+    border-top: 10px solid #fff;
+}
+
+/*secondBlockLeft*/
+.secondBlockLeft{
+    width: 630px;
+    padding: 100px 73px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 0;
+}
+h2{
+    font:bold 50px 'Alegreya', serif;
+    color:#56534c;
+}
+h3{
+    font:bold 16px 'Alegreya', serif;
+    color:#a47d5e;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+}
+.chefCook{
+    font:bold 24px 'Alegreya', serif;
+    letter-spacing: 0.025em;
+    margin: 40px auto;
+}
+.avatar{
+    margin: 10px auto;
+}
+.avatar > div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.avatarText{
+    width:110px;
+    height:60px;
+    border-top: 1px solid #d7d5ca;
+    border-bottom: 1px solid #d7d5ca;
+    font: 24px 'Alegreya', serif;
+    letter-spacing: 0.025em;
+    line-height: 60px;
+}
+.avatarImg{
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/avatar.jpg");
+    background-size:cover;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    margin: 0 25px;
+}
+.quote{
+    margin: 0 37px;
+    padding: 25px 0;
+    font: 24px Scriptina;
+    color:#a47d5e;
+    letter-spacing: 0.025em;
+    position: relative;
+    line-height: 30px;
+}
+
+.openQuote, .closeQuote{
+    font: 60px Times New Roman;
+    color:#56534c;
+    opacity: 0.5;
+}
+.openQuote{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.closeQuote{
+    transform: scale(-1, 1) translateY(50%);
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*secondBlockRight*/
+.artTopLeft, .artTopRight, .artBottomRight, .artBottomLeft{
+    width:295px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.artTopLeft{
+   background-image: url("../images/art-top-left.jpg");
+}
+.artTopRight{
+    background-image: url("../images/art-top-right.jpg");
+}
+.artBottomRight{
+    background-image: url("../images/art-bottom-right.jpg");
+}
+.artBottomLeft{
+    background-image: url("../images/art-bottom-left.jpg");
+}
+
+.secondBlockRight {
+    width: 610px;
+    height: 520px;
+    margin-right: 10px;
+    display: inline-block;
+    border: 1px solid #000;
+}
