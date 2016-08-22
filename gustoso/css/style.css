@@ -26,6 +26,16 @@ body{
     position: relative;
 }
 
+h2{
+    font:bold 50px 'Alegreya', serif;
+    color:#56534c;
+}
+h3{
+    font:bold 16px 'Alegreya', serif;
+    color:#a47d5e;
+    text-transform: uppercase;
+}
+
 /* first-block begin */
 
 .first-block{
@@ -146,15 +156,9 @@ main{
     margin-top: 0;
     float: left;
 }
-h2{
-    font:bold 50px 'Alegreya', serif;
-    color:#56534c;
-}
-h3{
-    font:bold 16px 'Alegreya', serif;
-    color:#a47d5e;
-    text-transform: uppercase;
-    margin-bottom: 65px;
+
+.content-2-block{
+    margin-top: 65px;
 }
 .chef-cook{
     font:bold 24px 'Alegreya', serif;
@@ -305,11 +309,57 @@ h3{
 
 /*fourth-block begin*/
 .fourth-block{
+    padding-top: 140px;
     background: url("../images/bg-4.jpg") no-repeat;
     background-size: cover;
     -webkit-box-shadow: inset 0 8px 9px 0 rgba(0, 0, 0, 0.3);
     -moz-box-shadow:    inset 0 8px 9px 0 rgba(0, 0, 0, 0.3);
     box-shadow:         inset 0 8px 9px 0 rgba(0, 0, 0, 0.3);
+}
+
+.container-third-block{
+    width: 965px;
+    height: 513px;
+    background: #fff;
+    -webkit-box-shadow: 0 25px 30px 0 rgba(105, 80, 58, 0.45);
+    -moz-box-shadow:    0 25px 30px 0 rgba(105, 80, 58, 0.45);
+    box-shadow:         0 25px 30px 0 rgba(105, 80, 58, 0.45);
+    position: relative;
+}
+
+/*  блок перекрывающий нижний левый угол - при его использовании картинка пропадает
+.container-third-block:before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 0 50px 50px 0;
+    border-color: transparent #333 transparent
+     transparent;
+}
+*/
+
+.third-block-left{
+    float: left;
+    width: 420px;
+    height: inherit;
+    background: url("../images/3-blok-left.jpg") no-repeat;
+    background-size: cover;
+}
+
+.third-block-right{
+    width: 545px;
+    height: inherit;
+    margin-left: 420px;
+    padding: 80px 70px 40px 60px;
+    background-image: url("../images/3-block-bg-right.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.content-3-block{
+    margin-top: 70px;
 }
 
 /*fourth-block end*/
